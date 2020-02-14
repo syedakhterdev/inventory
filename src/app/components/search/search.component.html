@@ -1,0 +1,13 @@
+
+  <h3>Welcome to AutoNation!</h3>
+  <div class="search-main">
+    <div class="search-field">
+      <mat-form-field class="example-full-width" >
+        <mat-label>Search by ID</mat-label>
+        <input matInput placeholder="Search by ID" [(ngModel)]="searchInput" type="number">
+      </mat-form-field>
+      <button mat-button mat-raised-button (click)="search()" class="search-button" color="primary" [disabled]="!searchInput" >Search</button>
+    </div>
+    <app-data-table *ngIf="data && data.length" [data]="data"></app-data-table>
+  </div>
+

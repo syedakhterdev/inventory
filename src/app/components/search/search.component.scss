@@ -1,0 +1,15 @@
+.search-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search-field {
+  position: relative;
+  button {
+    position: absolute;
+  }
+}
+.search-button {
+  margin: 15px;
+}
